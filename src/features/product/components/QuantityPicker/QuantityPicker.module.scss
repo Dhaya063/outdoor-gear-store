@@ -1,0 +1,23 @@
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quantity button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.quantity button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity span {
+  font-size: 18px;
+  font-weight: 600;
+}

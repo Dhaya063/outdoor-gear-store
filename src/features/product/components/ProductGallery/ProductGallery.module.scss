@@ -1,0 +1,58 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mainImageContainer {
+  height: 650px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.mainImage:hover {
+  transform: scale(1.05);
+}
+
+.thumbnailRow {
+  display: flex;
+  gap: 12px;
+}
+
+.thumbnailButton {
+  width: 90px;
+  height: 90px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
+  overflow: hidden;
+}
+
+.thumbnailButton:hover {
+  border-color: #111827;
+}
+
+.active {
+  border-color: #111827;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

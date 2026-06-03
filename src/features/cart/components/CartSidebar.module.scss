@@ -1,0 +1,113 @@
+.sidebar {
+  position: sticky;
+  top: 20px;
+
+  width: 280px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: white;
+
+  padding: 16px;
+
+  max-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.clearBtn {
+  border: none;
+  background: transparent;
+  color: red;
+  cursor: pointer;
+}
+
+.empty {
+  color: #666;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  max-height: 380px;
+  overflow-y: auto;
+
+  padding-right: 6px;
+}
+
+.items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.items::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+.items::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.items::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+
+  border-bottom: 1px solid #eee;
+
+  padding-bottom: 12px;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+
+  object-fit: contain;
+}
+
+.item h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.item p {
+  font-size: 12px;
+  color: #666;
+}
+
+.removeBtn {
+  margin-top: 6px;
+
+  border: none;
+  background: transparent;
+
+  color: #dc2626;
+
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: auto;
+
+  border-top: 1px solid #eee;
+
+  padding-top: 16px;
+
+  background: white;
+}
