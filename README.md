@@ -1,73 +1,202 @@
-# React + TypeScript + Vite
+# Outdoor Gear Product Detail Page (PDP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a responsive Product Detail Page (PDP) built using React, Vite, TypeScript, and SCSS Modules. The application demonstrates a modern e-commerce product page with product variants, inventory management, cart functionality, and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+Vercel:  https://outdoor-gear-store-nine.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## GitHub Repository
 
-## Expanding the ESLint configuration
+GitHub: https://github.com/Dhaya063/outdoor-gear-store
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Product Information
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Product details fetched from Fake Store API
+* Product image gallery with thumbnails
+* Product title, price, and description
+
+### Product Variants
+
+* Color selection (Black, Blue, Green)
+* Capacity selection (15L, 20L, 25L)
+* Variant-specific stock management
+
+### Inventory Management
+
+* Available stock indication
+* Low stock warning
+* Sold-out state handling
+* Quantity restriction based on available inventory
+
+### Shopping Cart
+
+* Add to Cart functionality
+* Cart sidebar
+* Cart item count
+* Remove items from cart
+* Clear cart functionality
+* Cart persistence using localStorage
+
+### User Experience
+
+* Responsive design
+* URL synchronization for selected variants
+* Loading states
+* Error handling
+* Sticky cart sidebar
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* React Router
+* Axios
+
+### State Management
+
+* Context API
+
+### Styling
+
+* SCSS Modules
+
+### Deployment
+
+* Vercel
+
+### API
+
+* Fake Store API
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── app/
+│   └── router/
+│
+├── assets/
+│   └── images/
+│
+├── features/
+│   ├── product/
+│   │   ├── components/
+│   │   ├── data/
+│   │   ├── pages/
+│   │   └── types/
+│   │
+│   └── cart/
+│       ├── components/
+│       ├── context/
+│       ├── hooks/
+│       └── services/
+│
+└── shared/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <repository-url>
 ```
+
+Navigate to the project:
+
+```bash
+cd outdoor-gear-pdp
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Application will be available at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Build
+
+Create production build:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Deployment
+
+The application is deployed using Vercel.
+
+Build Command:
+
+```bash
+npm run build
+```
+
+Output Directory:
+
+```text
+dist
+```
+
+---
+
+## Assumptions
+
+* Product variants are mocked locally.
+* Product stock is managed on the frontend.
+* Cart data is stored in localStorage.
+* Product information is retrieved from Fake Store API.
+
+---
+
+## Future Improvements
+
+* Backend inventory management
+* Authentication and user accounts
+* Wishlist functionality
+* Product recommendations
+* Checkout flow
+* Unit and integration tests
+
+---
+
+## Author
+
+Dhaya Baskar
