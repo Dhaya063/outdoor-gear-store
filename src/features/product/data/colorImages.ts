@@ -1,19 +1,21 @@
+import Black1 from "../../../assets/images/backpack/Black_1.webp";
+import Black2 from "../../../assets/images/backpack/Black_2.webp";
+import Black3 from "../../../assets/images/backpack/Black_3.jpg";
+
+import Blue1 from "../../../assets/images/backpack/Blue_1.webp";
+import Blue2 from "../../../assets/images/backpack/Blue_2.webp";
+import Blue3 from "../../../assets/images/backpack/Blue_3.webp";
+
+import Green1 from "../../../assets/images/backpack/Green_1.webp";
+import Green2 from "../../../assets/images/backpack/Green_2.webp";
+import Green3 from "../../../assets/images/backpack/Green_3.webp";
+
+
 export const colorImages = {
-  Black: [
-    "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-    "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7",
-    "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
-  ],
+  Black: [Black3,Black2,Black1],
 
-  Blue: [
-      "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
-    "https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg",
-    "https://images.pexels.com/photos/532803/pexels-photo-532803.jpeg",
-  ],
+  Blue: [Blue1,Blue2,Blue3],
 
-  Green: [
-     "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
-  "https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg",
-  "https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg",
-],
+  Green: [Green1,Green2,Green3],
+
 };
